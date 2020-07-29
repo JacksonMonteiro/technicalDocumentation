@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    font-family: 'Source sans pro', sans-serif;
+}
+
+nav#navbar {
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    width: 25%;
+}
+
+nav#navbar header {
+    border-bottom: 1px solid #FFEBA9;
+}
+
+nav#navbar header > h1 {
+    font-size: 28px;
+    margin: 20px auto;
+    font-weight: 400;
+    text-align: center;
+}
+
+nav#navbar ul {
+   display: grid;
+   height: 100vh;
+   grid-template-columns: 100%;
+   grid-template-rows: repeat(5 , 18%);
+   justify-items: center;
+   list-style: none;
+}
+
+nav#navbar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #3470A3;
+    border-bottom: 1px solid #FFEBA9;
+}
+
+nav#navbar ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24pt;
+    text-align: center;
+}
+
+main {
+    position: absolute;
+    left: 25%;
+}

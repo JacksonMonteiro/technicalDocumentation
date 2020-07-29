@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Python Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header><h1>Python Documentation</h1></header>
+        <ul>
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#Hello_world">Hello World</a></li>
+            <li><a href="#Variables">Variables</a></li>
+            <li><a href="#Data_types">Data types</a></li>
+            <li><a href="#if...else_statement">If statement</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>
+                <h1>Introduction</h1>
+            </header>
+            <h2>What is Python?</h2>
+            <p>
+                Python is a popular programming language. It was created by Guido Van Rossum, and released in 1991.
+                Python is used for web development (Server-side), software development, mathematics and system
+                scripting.
+            </p>
+            <h3>What can Python do?</h3>
+            <ul>
+                <li>Can be used on a server to create a web application.</li>
+                <li>Can be used alongside software to create workflows.</li>
+                <li>Can connect to database systems. It can also read and modify files.</li>
+                <li>Can be used to handle big data and perform complex mathematics.</li>
+                <li>Can be used for rapid prototyping, or for production-ready software development.</li>
+            </ul>
+            <h4>Why Python?</h4>
+            <ul>
+                <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                <li>Python has a simple syntax similar to the English language.</li>
+                <li>Python has syntax that allows developers to write programs with fewer lines than some other
+                    programming languages.</li>
+                <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written.
+                    This means that prototyping can be very quick.</li>
+                <li>Python can be treated in a procedural way, an object-orientated way or a functional way.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>
+                <h1>Hello world</h1>
+            </header>
+            <p>
+                Python is an interpreted programming language, this means that as a developer you write Python (.py)
+                files in a text editor and then put those files into the python interpreter to be executed.
+                The way to run a python file is like this on the command line:
+            </p>
+            <code>
+                C:\Users\Your Name>python helloworld.py
+            </code>
+            <p>
+                Where "helloworld.py" is the name of your python file.
+                Let's write our first Python file, called helloworld.py, which can be done in any text editor.
+            </p>
+            <label>
+                helloworld.py <br>
+                <code>
+                    print("Hello, world")
+                </code>
+            </label>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>
+                <h1>Variables</h1>
+            </header>
+            <p>
+                Variables are containers for storing data values.Unlike other programming languages, Python has no
+                command for declaring a variable.
+                A variable is created the moment you first assign a value to it.
+            </p>
+            <h2>Creating variables</h2>
+            <code>
+                x = 5 <br>
+                y = "John" <br>
+                print(x) <br>
+                print(y)
+            </code>
+            <h3>Variable names</h3>
+            <p>
+                A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+                Rules for Python variables:
+                <ul>
+                    <li>A variable name must start with a letter or the underscore character</li>
+                    <li>A variable name cannot start with a number</li>
+                    <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+                    </li>
+                    <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+                </ul>
+            </p>
+            <label>
+                Example: <br>
+                <code>
+                    #Legal variable names: <br>
+                    myvar = "John" <br>
+                    my_var = "John" <br>
+                    _my_var = "John" <br>
+                    myVar = "John" <br>
+                    MYVAR = "John" <br>
+                    myvar2 = "John" <br>
+                    <br>
+                    #Illegal variable names: <br>
+                    2myvar = "John"<br>
+                    my-var = "John"<br>
+                    my var = "John"
+                </code>
+            </label>
+            <p>
+                Remember that variable names are case-sensitive
+            </p>
+        </section>
+        <section class="main-section" id="Data_types">
+            <header>
+                <h1>Data types</h1>
+            </header>
+            <p>
+                In programming, data type is an important concept.Variables can store data of different types, and
+                different types can do different things.Python has the following data types built-in by default, in
+                these categories:
+            </p>
+            <table>
+                <tr>
+                    <td>Text type:</td>
+                    <td>
+                        <code>
+                            str
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numeric types:</td>
+                    <td>
+                        <code>
+                            int, float, complex
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sequence types:</td>
+                    <td>
+                        <code>
+                            list, tuple, range
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mapping type:</td>
+                    <td>
+                        <code>
+                            dict
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Set types:</td>
+                    <td>
+                        <code>
+                            set, frozenset
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Boolean type:</td>
+                    <td>
+                        <code>
+                            bool
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Binary types:</td>
+                    <td>
+                        <code>
+                            bytes, bytearray, memoryview
+                        </code>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="main-section" id="if...else_statement">
+            <header>
+                <h1>if...else statement</h1>
+            </header>
+            <p>
+                Python supports the usual logical conditions from mathematics:
+            </p>
+            <ul>
+                <li>Equals: <code>a == b</code> </li>
+                <li>Not equals: <code> a != b</code> </li>
+                <li>Less than: <code> a < b</code> </li>
+                <li>Less than or equal to: <code> a <= b</code> </li>
+                <li>Greater than: <code>a > b</code> </li>
+                <li>Greater than or equal to: <code> a >= b</code> </li>
+            </ul>
+            <p>
+                These conditions can be used in several ways, most commonly in "if statements" and loops.
+            </p>
+            <p>
+                An "if statement" is written by using the if keyword.
+            </p>
+            <label>
+                Example: <br> <br>
+                <p>
+                    If statement <br>
+                    <code>
+                        a = 33 <br>
+                        b = 200 <br>
+                        if b > a: 
+                            print("b is greater than a")
+                    </code>
+                </p>
+            </label>
+        </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
